@@ -1,6 +1,6 @@
-library(data.table)
 source('read_data.R')
 
+# Plot 4
 draw.plot4 <- function() {
   data <- read.dataset()
   

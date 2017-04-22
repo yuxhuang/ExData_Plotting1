@@ -1,6 +1,6 @@
-library(data.table)
 source('read_data.R')
 
+# Plot 2
 draw.plot2 <- function() {
   data <- read.dataset()
   png(filename = 'plot2.png', width = 600, height = 600)

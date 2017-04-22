@@ -1,6 +1,9 @@
+# Subroutines to download/prepare/extract data
+
 library(data.table)
 library(dplyr)
 
+# Download and prepare
 prepare.dataset <- function() {
   # check if file exists
   if (file.exists('dataset/household_power_consumption.txt')) {
@@ -16,6 +19,7 @@ prepare.dataset <- function() {
   unzip(tmp, exdir = 'dataset/')
 }
 
+# Extract
 read.dataset <- function () {
   # read data
   data <- fread('dataset/household_power_consumption.txt', na.strings = '?')
